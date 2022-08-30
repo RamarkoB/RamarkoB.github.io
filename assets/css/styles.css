@@ -3,6 +3,13 @@ body {
   font-family: Jost;
 }
 
+#lost-h {
+  margin-left: -.25em;
+  padding: .1em .25em;
+  box-shadow: inset 25em 0em 0 .1px black;
+  color: white!important;
+}
+
 /* Nav Bar Menu */
 
 .blackout {
@@ -66,6 +73,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .card-design {
+    cursor: pointer;
+  }
+}
+
 /* Sections and Section Headers */
 
 section {
@@ -115,7 +128,7 @@ section > h1, section > div > div > h1 {
   transition: box-shadow 0.5s, color 0.5s;
 }
 
-.card-blackout:hover h4 {
+.card-blackout:hover h4, {
   box-decoration-break: clone;
   box-shadow: inset 25em 0em 0 .1px black;
   color: white!important;
@@ -170,10 +183,4 @@ section > h1, section > div > div > h1 {
     background: transparent;
   }
 } */
-
-@media (min-width: 768px) {
-  .card-design {
-    cursor: pointer;
-  }
-}
 
