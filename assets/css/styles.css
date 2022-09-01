@@ -121,7 +121,7 @@ section > h1, section > div > div > h1 {
   transition: box-shadow 0.5s, color 0.5s;
 }
 
-.card-blackout:hover h4, {
+.card-blackout:hover h4 {
   box-decoration-break: clone;
   box-shadow: inset 25em 0em 0 .1px black;
   color: white!important;
