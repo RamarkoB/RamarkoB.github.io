@@ -72,6 +72,34 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .card-design h4 {
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone!important;
+    white-space: pre-line;
+    margin-left: -.25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    box-shadow: inset 0em 0 black;
+    display: inline;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-design:hover h4 {
+    box-decoration-break: clone;
+    box-shadow: inset 25em 0em 0 .1px black;
+    color: white!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+#modal-title, #modal-footer {
+  padding: 10px 0;
+}
+
 /* Sections and Section Headers */
 
 section {
@@ -97,6 +125,10 @@ section > h1, section > div > div > h1 {
 }
 
 /* Cards */
+
+.card {
+  margin-bottom: 12px;
+}
 
 .card-hover {
   background-size: 200% 100%!important;
@@ -126,10 +158,6 @@ section > h1, section > div > div > h1 {
   box-shadow: inset 25em 0em 0 .1px black;
   color: white!important;
   transition: box-shadow 0.5s, color 0.5s;
-}
-
-.card-blackout {
-  margin-bottom: 12px;
 }
 
 .card-blackout .row:first-of-type, .card-blackout.card-portfolio p {
