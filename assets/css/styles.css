@@ -11,13 +11,7 @@ body {
   transition: box-shadow 0.5s, color 0.5s;
 }
 
-.blackout:hover, .blackout.active {
-  color: white!important;
-  box-shadow: inset 10em 0 0 0.1px black;
-  transition: box-shadow 0.5s, color 0.5s;
-}
-
-.card-link {
+.card-text {
   text-decoration: none;
   color: white;
 }
@@ -73,7 +67,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .card-design h4 {
+  .card-design h4, .card-home h4 {
     -webkit-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     box-decoration-break: clone!important;
@@ -88,10 +82,18 @@ body {
 }
 
 @media (min-width: 768px) {
-  .card-design:hover h4 {
+  .card-design:hover h4, .card-home:hover h4 {
     box-decoration-break: clone;
     box-shadow: inset 25em 0em 0 .1px black;
     color: white!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  .blackout:hover {
+    color: white!important;
+    box-shadow: inset 10em 0 0 0.1px black;
     transition: box-shadow 0.5s, color 0.5s;
   }
 }
