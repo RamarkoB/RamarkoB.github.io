@@ -114,10 +114,19 @@ body {
   }
 }
 
-@media (hover: hover) {
-  .blackout:hover {
+@media (min-width: 768px) {
+  .blackout:hover, .blackout.active {
     color: white!important;
-    box-shadow: inset 10em 0 0 0.1px black;
+    box-shadow: inset 0em 0 black;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (max-width: 767px) {
+  .blackout.active {
+    padding: 8px 10px;
+    color: white!important;
+    box-shadow: inset 8em 0 0 0 black;
     transition: box-shadow 0.5s, color 0.5s;
   }
 }
