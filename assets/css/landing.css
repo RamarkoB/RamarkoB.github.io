@@ -11,9 +11,7 @@
   --transparency: 80%;
   --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) var(--size), transparent var(--transparency));
   --mask: var(--grad), var(--grad);
-  -webkit-mask: var(--mask);
   -webkit-mask-composite: source-in;
-  -webkit-mask: var(--mask);
   mask: var(--mask);
   -webkit-mask-composite: source-in, xor;
   mask-composite: intersect;
