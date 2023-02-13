@@ -12,9 +12,11 @@
     <meta name="twitter:image" content="assets/img/Logo.png">
     <link rel="icon" type="image/png" sizes="720x720" href="assets/img/Logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" href="assets/css/display.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 <link rel=”apple-touch-icon” type="image/png" href="assets/img/Logo.png">
     <link rel="shortcut icon" type="image/png" href="assets/img/Logo.png">
 </head>
@@ -23,7 +25,7 @@
     <div id="modal">
         <div id="modal-background" style="width: 100%;height: 100%;position: absolute;background: var(--bs-dark);opacity: 0.67;"></div>
         <div class="card border-dark border rounded border-3" style="margin: 12px;background: transparent;">
-            <div class="card-body" style="background: white;padding: 0px 16px;">
+            <div class="card-body" style="background: white; padding: 0px 16px;">
                 <div class="modal-header">
                     <h4 class="modal-title" id="modal-title"></h4>
                 </div>
@@ -36,7 +38,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md text-uppercase py-3" style="border-bottom: 3px solid var(--bs-body-color);">
+    <nav class="navbar navbar-light navbar-expand-md text-uppercase py-3" style="border-bottom: 3px solid var(--bs-body-color) ;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="home"><span id="nav-name" class="fw-bold, text-uppercase, blackout" style="font-weight: bold;letter-spacing: 10px;"><span style="letter-spacing: 0;padding: 10px;"><span style="text-decoration: line-through;">R</span></span>amarko</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
@@ -61,30 +63,18 @@
                     <p class="fs-5" style="margin-right: 10vw;margin-left: 10vw;">This website is brand new and was only made <span id="creationTimer" title="yo"></span>&nbsp;ago.</p>
                 </div>
                 <div class="col">
-                    <p class="fs-5" style="margin-right: 10vw;margin-left: 10vw;">Over time, this page will be updated with previous, current, and upcoming personal projects. If this page has gone an unreasonably long time without being updated, you can assume that it is due to <span id="excuses" style="text-decoration: underline;"></span>.</p>
+                    <p class="fs-5" style="margin-right: 10vw;margin-left: 10vw;">Over time, this page will be updated with previous, current, and upcoming personal projects. If this page has gone an unreasonably long time without being updated, you can assume that it is due to <span id="excuses" style="text-decoration:  underline;"></span>.</p>
                 </div>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3" style="margin-top: 24px;padding-right: 10px;padding-left: 10px;">
-            <div class="col">
-                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/decorum.png">
-                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
-                        <h4 class="card-title" style="margin-bottom: 0;">Decorum</h4>
-                        <p>A more advanced version of "AutoChair," Decorum was a chairing and moderating tool deployed at the Model United Nation of the University of Chicago, the third biggest Model Conference in the United States. I personally designed and programmed the entire application myself using React.&nbsp;&nbsp;</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration: underline;"><a href="https://github.com/RamarkoB/AutoChair" style="color: var(--bs-body-color);">Github</a></li>
-                            <li class="list-inline-item" style="text-decoration: underline;"><a href="decorum" style="color: var(--bs-body-color);">Try it out!</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="col">
                 <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/chiventure.jpeg">
                     <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
                         <h4 class="card-title" style="margin-bottom: 0;">Chiventure</h4>
                         <p>An UChicago run, open-source project in C, Chiventure is a game engine that allows users to construct their own text-based adventure games. Contributions mostly come students of the "Introduction to Software Development" class offered on campus. I took this class in the spring of 2021, and became a contributor to the project.</p>
                         <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration: underline;"><a href="https://github.com/uchicago-cs/chiventure" style="color: var(--bs-body-color);">Github</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/uchicago-cs/chiventure" style="color: var(--bs-body-color);">Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,26 +85,22 @@
                         <h4 class="card-title" style="margin-bottom: 0;">AutoChair</h4>
                         <p>UChicago hosts the prestigious collegiate Model United Nations conference, ChoMUN, annually. Most chairs use a combination of spreadsheets and a timer to keep track of their committee. When I chaired My own committee, I decided to take a more advanced approach and develop an open-source platform that would allow people to more easily chair a committee.&nbsp;</p>
                         <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration: underline;"><a href="https://github.com/RamarkoB/AutoChair" style="color: var(--bs-body-color);">Github</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/AutoChair" style="color: var(--bs-body-color);">Github</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3" style="margin-top: 24px;padding-right: 10px;padding-left: 10px;">
             <div class="col">
                 <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/bangla.png">
                     <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
                         <h4 class="card-title" style="margin-bottom: 0;">Bangla Tester</h4>
                         <p>When taking a class in Bangla, I found most online flashcard websites unable to meet my needs of testing me with the different letters of the Bangla alphabet. To remedy this, I constructed my own flashcard application to test me on the consonants, vowels, and joint letters of the Bangla alphabet.</p>
                         <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration: underline;"><a href="https://github.com/RamarkoB/bangla-project" style="color: var(--bs-body-color);">Github</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/bangla-project" style="color: var(--bs-body-color);">Github</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
     </section>
     <section class="load-fourth">
@@ -178,10 +164,12 @@
             <p class="mb-0">Ramarko Bhattacharya</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/modal.min.js"></script>
-    <script src="assets/js/projects.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/cardvisibility.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/projects.js"></script>
 </body>
 
 </html>
