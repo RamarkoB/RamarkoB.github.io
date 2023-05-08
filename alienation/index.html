@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+    </body>
+</html>
+
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+    } 
+</style>
+
+<script type="module">
+    import * as d3 from './d3.js';
+    window.hack = {d3}
+
+    function randomInt(a, b) {
+        if (b) {
+            return Math.floor(a + (Math.random() * (b - a)));
+        } else {
+            return Math.floor(Math.random() * a);
+        }
+    }
+    
+
+    function randomColor() {
+        return d3.color(d3.rgb(randomInt(255),randomInt(255),randomInt(255)));
+    }
+
+    const txt = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend quam adipiscing vitae proin. Adipiscing bibendum est ultricies integer quis auctor elit sed. Aliquam purus sit amet luctus venenatis lectus magna. Egestas quis ipsum suspendisse ultrices. Sed tempus urna et pharetra pharetra. Non blandit massa enim nec dui nunc mattis enim ut. Massa tempor nec feugiat nisl pretium fusce id. Ipsum faucibus vitae aliquet nec ullamcorper sit. Vel facilisis volutpat est velit egestas dui id. Sed tempus urna et pharetra pharetra massa massa. Eu feugiat pretium nibh ipsum consequat nisl vel pretium.
+    Tincidunt lobortis feugiat vivamus at augue eget. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Non arcu risus quis varius. Eget nunc lobortis mattis aliquam faucibus. Malesuada proin libero nunc consequat interdum. Ultrices tincidunt arcu non sodales. Libero nunc consequat interdum varius sit. Eu lobortis elementum nibh tellus molestie nunc non blandit. Mattis enim ut tellus elementum sagittis vitae et leo. Sed arcu non odio euismod lacinia at. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Nam at lectus urna duis convallis convallis tellus id. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Praesent elementum facilisis leo vel fringilla est.
+    Enim facilisis gravida neque convallis. Quam vulputate dignissim suspendisse in est. Neque volutpat ac tincidunt vitae. Dui ut ornare lectus sit amet est placerat in. Faucibus ornare suspendisse sed nisi lacus sed viverra. Et malesuada fames ac turpis egestas. Et egestas quis ipsum suspendisse. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Et malesuada fames ac turpis egestas sed tempus urna. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Amet facilisis magna etiam tempor. Nunc sed augue lacus viverra vitae congue eu consequat. Ultrices eros in cursus turpis. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Ut tristique et egestas quis ipsum suspendisse ultrices gravida.
+    Malesuada fames ac turpis egestas integer. Massa sapien faucibus et molestie ac feugiat. Tortor pretium viverra suspendisse potenti nullam ac tortor. Risus quis varius quam quisque. Tellus molestie nunc non blandit massa. At erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Felis eget velit aliquet sagittis id. Et sollicitudin ac orci phasellus egestas tellus. Suspendisse ultrices gravida dictum fusce ut placerat. Pellentesque elit ullamcorper dignissim cras tincidunt. Sagittis purus sit amet volutpat consequat mauris. Ultrices gravida dictum fusce ut placerat orci nulla. Enim blandit volutpat maecenas volutpat. Eget mauris pharetra et ultrices neque ornare aenean. Eu tincidunt tortor aliquam nulla facilisi. Suspendisse in est ante in nibh mauris cursus. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Sagittis vitae et leo duis ut diam quam nulla.
+    Ut eu sem integer vitae justo. Ac placerat vestibulum lectus mauris ultrices eros in. Nunc eget lorem dolor sed. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Vitae elementum curabitur vitae nunc sed. Cursus euismod quis viverra nibh cras. Pretium vulputate sapien nec sagittis aliquam malesuada. Posuere ac ut consequat semper. Tellus pellentesque eu tincidunt tortor aliquam. At tempor commodo ullamcorper a. Interdum posuere lorem ipsum dolor sit amet. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Parturient montes nascetur ridiculus mus mauris. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Habitant morbi tristique senectus et netus et. Id aliquet risus feugiat in ante metus dictum. Mauris cursus mattis molestie a iaculis.
+    Massa id neque aliquam vestibulum morbi blandit cursus. Purus faucibus ornare suspendisse sed. Nisi vitae suscipit tellus mauris a diam maecenas. Nisl vel pretium lectus quam id leo in vitae turpis. Neque ornare aenean euismod elementum nisi quis eleifend quam. Velit dignissim sodales ut eu sem. Viverra suspendisse potenti nullam ac. Sagittis nisl rhoncus mattis rhoncus urna. Faucibus a pellentesque sit amet porttitor. Faucibus nisl tincidunt eget nullam non nisi. Donec pretium vulputate sapien nec sagittis. Nisi scelerisque eu ultrices vitae. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Accumsan lacus vel facilisis volutpat est velit egestas dui. Ac tincidunt vitae semper quis lectus nulla. Consectetur a erat nam at lectus urna duis. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Viverra accumsan in nisl nisi scelerisque. Pretium fusce id velit ut tortor pretium viverra. Ornare arcu dui vivamus arcu.
+    Fermentum posuere urna nec tincidunt praesent semper feugiat. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Facilisis mauris sit amet massa vitae. Est placerat in egestas erat imperdiet sed. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Eget dolor morbi non arcu. At risus viverra adipiscing at in tellus integer. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Varius vel pharetra vel turpis nunc eget. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Eu tincidunt tortor aliquam nulla facilisi cras. Enim lobortis scelerisque fermentum dui faucibus in. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Non consectetur a erat nam at. Id venenatis a condimentum vitae sapien pellentesque habitant. Egestas pretium aenean pharetra magna ac. Nibh tortor id aliquet lectus. Mattis vulputate enim nulla aliquet porttitor.
+    Id cursus metus aliquam eleifend mi in nulla posuere. Sagittis id consectetur purus ut faucibus. Et malesuada fames ac turpis. Lacus laoreet non curabitur gravida. Mattis rhoncus urna neque viverra justo nec ultrices dui. Sed arcu non odio euismod lacinia. Enim ut sem viverra aliquet eget. Faucibus vitae aliquet nec ullamcorper. Blandit massa enim nec dui nunc mattis enim ut tellus. Feugiat in fermentum posuere urna nec tincidunt praesent. Odio morbi quis commodo odio aenean sed adipiscing diam.
+    Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Diam phasellus vestibulum lorem sed. Massa id neque aliquam vestibulum morbi blandit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Diam donec adipiscing tristique risus nec feugiat in. Amet commodo nulla facilisi nullam. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Lectus urna duis convallis convallis. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
+    Eget mi proin sed libero enim sed faucibus turpis in. Amet venenatis urna cursus eget. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Ullamcorper morbi tincidunt ornare massa. Pharetra pharetra massa massa ultricies mi quis hendrerit. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Eu non diam phasellus vestibulum lorem sed risus ultricies. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Aliquet enim tortor at auctor urna nunc id cursus. Turpis egestas sed tempus urna et pharetra. Eleifend quam adipiscing vitae proin sagittis nisl. Ipsum faucibus vitae aliquet nec ullamcorper sit. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Ut aliquam purus sit amet luctus. Eros in cursus turpis massa tincidunt dui ut ornare. At risus viverra adipiscing at in tellus integer feugiat. Quam id leo in vitae turpis massa sed elementum. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Vitae justo eget magna fermentum iaculis.`
+
+    const a = randomInt(20)
+    const data = [];
+
+    for (let i = 0; i < a; i++) {
+        data.push({x: String(randomInt(100)) + "%", 
+                y: String(randomInt(100)) + "%", 
+                color: randomColor(),
+                padding: [randomInt(3, 7), randomInt(3, 7), randomInt(3, 7), randomInt(3, 7)],
+                border: {width: randomInt(5), color: randomColor()},
+                rotate: Math.random(),
+                round: randomInt(100),
+                txt:{s: randomInt(txt.length), e: randomInt(20)}
+        })
+    }
+
+    window.data = data;
+    window.txt = txt;
+    window.randomInt = randomInt
+
+    console.log("Data generated!");
+
+    d3.select("body")
+        .style("background-color", randomColor())
+        .selectAll(".card")
+        .data(data)
+        .join("div")
+        .attr("class", "card")
+        .style("position", "absolute")
+        .style("padding-left", d => `${d.padding[0]}%`)
+        .style("padding-right", d => `${d.padding[1]}%`)
+        .style("padding-top", d => `${d.padding[2]}%`)
+        .style("padding-bottom", d => `${d.padding[3]}%`)
+        .style("left", d => d.x)
+        .style("top", d => d.y)
+        .style("background-color", d => d.color)
+        .style("border-width", d => `${d.border.width}px`)
+        .style("border-color", d => d.border.color)
+        .style("border-style", "solid")
+        .style("transform", d => `rotate(${d.rotate}turn)`)
+        .style("border-radius", d => `${d.round}%`)
+        .html(d => txt.slice(d.txt.s, d.txt.s + d.txt.e))
+        
+
+    console.log("Goodbye!");
+</script>
