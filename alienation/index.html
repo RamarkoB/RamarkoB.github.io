@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+</head>
+
 <html>
-    <body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+              Working Correctly!
+            </div>
+    
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div id="main" class="window-body">
+
+        </div>
+        <section class="field-row" style="justify-content: flex-end">
+            <button class="bottom">OK</button>
+            <button class="bottom">OK</button>
+          </section>
     </body>
 </html>
 
+
 <style>
-    body {
-        width: 100vw;
-        height: 100vh;
+    #main {
+        height: 90%;
     } 
+
+    body  {
+        overflow: hidden;
+        background-color: black;
+    }
+    .window {
+        height: calc(100vh - 2vw);
+        width: calc(100vw - 2vw);
+    }
+
+    .bottom {
+        margin-right: 10px;
+        margin-top: 6px
+    }
 </style>
 
 <script type="module">
@@ -40,12 +76,13 @@
     Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Diam phasellus vestibulum lorem sed. Massa id neque aliquam vestibulum morbi blandit. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Diam donec adipiscing tristique risus nec feugiat in. Amet commodo nulla facilisi nullam. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Lectus urna duis convallis convallis. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Mauris nunc congue nisi vitae suscipit tellus mauris a diam.
     Eget mi proin sed libero enim sed faucibus turpis in. Amet venenatis urna cursus eget. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Ullamcorper morbi tincidunt ornare massa. Pharetra pharetra massa massa ultricies mi quis hendrerit. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Eu non diam phasellus vestibulum lorem sed risus ultricies. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Aliquet enim tortor at auctor urna nunc id cursus. Turpis egestas sed tempus urna et pharetra. Eleifend quam adipiscing vitae proin sagittis nisl. Ipsum faucibus vitae aliquet nec ullamcorper sit. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Ut aliquam purus sit amet luctus. Eros in cursus turpis massa tincidunt dui ut ornare. At risus viverra adipiscing at in tellus integer feugiat. Quam id leo in vitae turpis massa sed elementum. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Vitae justo eget magna fermentum iaculis.`
 
-    const a = randomInt(20)
+    const a = randomInt(1, 20)
     const data = [];
 
     for (let i = 0; i < a; i++) {
-        data.push({x: String(randomInt(100)) + "%", 
-                y: String(randomInt(100)) + "%", 
+        data.push({
+                x: String(randomInt(-2, 90)) + "%", 
+                y: String(randomInt(3, 87)) + "%", 
                 color: randomColor(),
                 padding: [randomInt(3, 7), randomInt(3, 7), randomInt(3, 7), randomInt(3, 7)],
                 border: {width: randomInt(5), color: randomColor()},
@@ -54,28 +91,23 @@
                 txt:{s: randomInt(txt.length), e: randomInt(20)},
                 b1:{px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✓"},
                 b2:{px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✗"}
-        })
+            }
+        )
     }
 
-    window.data = data;
-    window.txt = txt;
-    window.randomInt = randomInt
-
-    console.log("Data generated!");
-
-    d3.select("body")
+    d3.select("#main")
         .style("background-color", randomColor())
         .selectAll(".card")
         .data(data)
         .join("div")
         .attr("class", "card")
         .style("position", "absolute")
+        .style("left", d => d.x)
+        .style("top", d => d.y)
         .style("padding-left", d => `${d.padding[0]}%`)
         .style("padding-right", d => `${d.padding[1]}%`)
         .style("padding-top", d => `${d.padding[2]}%`)
         .style("padding-bottom", d => `${d.padding[3]}%`)
-        .style("left", d => d.x)
-        .style("top", d => d.y)
         .style("background-color", d => d.color)
         .style("border-width", d => `${d.border.width}px`)
         .style("border-color", d => d.border.color)
@@ -91,7 +123,6 @@
         .style("top", b => `${b.py}%`)
         .style("background-color", b => b.color)
         .html(b => b.html)
+        .on("click", (e) => {console.log(e)})
         
-
-    console.log("Goodbye!");
 </script>
