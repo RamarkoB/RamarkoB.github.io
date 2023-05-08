@@ -51,7 +51,9 @@
                 border: {width: randomInt(5), color: randomColor()},
                 rotate: Math.random(),
                 round: randomInt(100),
-                txt:{s: randomInt(txt.length), e: randomInt(20)}
+                txt:{s: randomInt(txt.length), e: randomInt(20)},
+                b1:{px: randomInt(1, 50), py: randomInt(1, 50), color: randomColor(), html: "✓"},
+                b2:{px: randomInt(1, 50), py: randomInt(1, 50), color: randomColor(), html: "✗"}
         })
     }
 
@@ -81,6 +83,14 @@
         .style("transform", d => `rotate(${d.rotate}turn)`)
         .style("border-radius", d => `${d.round}%`)
         .html(d => txt.slice(d.txt.s, d.txt.s + d.txt.e))
+        .selectAll("button")
+        .data(d => [d.b1, d.b2])
+        .join("button")
+        .style("position", "absolute")
+        .style("left", b => `${b.px}%`)
+        .style("top", b => `${b.py}%`)
+        .style("background-color", b => b.color)
+        .html(b => b.html)
         
 
     console.log("Goodbye!");
