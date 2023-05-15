@@ -21,8 +21,7 @@
 
         </div>
         <section class="field-row" style="justify-content: flex-end">
-            <button class="bottom">OK</button>
-            <button class="bottom">OK</button>
+            <button id="ok" class="bottom">OK!</button>
           </section>
     </body>
 </html>
@@ -80,7 +79,7 @@
     const data = [];
 
     for (let i = 0; i < a; i++) {
-        data.push({
+        const datum = {
                 x: String(randomInt(-2, 90)) + "%", 
                 y: String(randomInt(3, 87)) + "%", 
                 color: randomColor(),
@@ -89,10 +88,12 @@
                 rotate: Math.random(),
                 round: randomInt(100),
                 txt:{s: randomInt(txt.length), e: randomInt(20)},
-                b1:{px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✓"},
-                b2:{px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✗"}
             }
-        )
+
+            datum.b1 = {px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✓", data:datum};
+            datum.b2 = {px: randomInt(1, 100), py: randomInt(1, 100), color: randomColor(), html: "✗", data:datum}
+
+        data.push(datum)
     }
 
     d3.select("#main")
@@ -123,6 +124,6 @@
         .style("top", b => `${b.py}%`)
         .style("background-color", b => b.color)
         .html(b => b.html)
-        .on("click", (e) => {console.log(e)})
         
+    d3.select("#ok").on("click", () => location.reload());
 </script>
