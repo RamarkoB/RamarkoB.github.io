@@ -15,6 +15,26 @@
     </body>
 </html>
 
+<script>
+    let time = 5 * 60;
+
+    function timeUpdate() {
+        if (time === 0) {
+            navigator.vibrate(200); // vibrate for 200ms
+            clearInterval(inter);
+        }
+
+        time--;
+
+        const minutes = Math.floor(time / 60);
+        const seconds = time - (minutes * 60)
+        document.getElementById("min").innerHTML = String(minutes);
+        document.getElementById("sec").innerHTML = String(seconds);
+    }
+
+    const inter = setInterval(timeUpdate, "1000");
+</script>
+
 <style>
     body {
         width:100vw; 
@@ -44,18 +64,3 @@
         font-size: 33px;
     }
 </style>
-
-<script>
-    let time = 5 * 60;
-
-    function timeUpdate() {
-        time--;
-
-        const minutes = Math.floor(time / 60);
-        const seconds = time - (minutes * 60)
-        document.getElementById("min").innerHTML = String(minutes);
-        document.getElementById("sec").innerHTML = String(seconds);
-    }
-
-    setInterval(timeUpdate, "1000");
-</script>
