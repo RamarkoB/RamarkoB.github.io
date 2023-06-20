@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    </head>
+    <body>
+        <div class="card">
+            <div id="timer">
+                <span id="min" class="big">5</span> <span class="tiny">MIN</span> <span id="sec" class="big">00</span> <span class="tiny">SEC</span> 
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+        width:100vw; 
+        height:100vh;
+        font-family:Jost;
+    }
+
+    .card {
+        width: 90%;
+        border:black solid 2px!important; 
+        margin:auto; 
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .timer {
+        width:100%;
+        text-align: center;
+    }
+
+
+
+    .big {
+        font-size: 100px;
+    }
+    
+    .tiny {
+        font-size: 33px;
+    }
+</style>
+
+<script>
+    let time = 5 * 60;
+
+    function timeUpdate() {
+        time--;
+
+        const minutes = Math.floor(time / 60);
+        const seconds = time - (minutes * 60)
+        document.getElementById("min").innerHTML = String(minutes);
+        document.getElementById("sec").innerHTML = String(seconds);
+    }
+
+    setInterval(timeUpdate, "1000");
+</script>
