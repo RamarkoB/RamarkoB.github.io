@@ -32,7 +32,10 @@
         document.getElementById("sec").innerHTML = String(seconds);
     }
 
-    const inter = setInterval(timeUpdate, "1000");
+    window.addEventListener("devicemotion", (event) => {
+        const inter = setInterval(timeUpdate, "1000");
+    });
+
 </script>
 
 <style>
