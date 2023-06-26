@@ -21,6 +21,12 @@
 
 <script>
     let time = 5 * 60;
+    let alpha;
+    let beta;
+    let gamma;
+
+    let shaketimer = 0;
+    let inter = -1;
 
     function timeUpdate() {
         if (time === 0) {
@@ -58,7 +64,27 @@
     btn.addEventListener( "click", permission );
 
     window.addEventListener("devicemotion", (event) => {
-        const inter = setInterval(timeUpdate, "1000");
+        alpha = DeviceMotionEvent.rotationRate.alpha; 
+        beta = DeviceMotionEvent.rotationRate.beta; 
+        gamma = DeviceMotionEvent.rotationRate.gamma; 
+        const anglechange = Math.sqrt((alpha^2) * (beta^2) * (gamma^2));
+
+        if (anglechange > 50 || shaketimer < 0) {
+            shaketimer++;
+
+            if (shaketimer > 7) {
+                shaketimer = -3;
+                
+                if (inter == -1) {
+                    inter = setInterval(timeUpdate, "1000");
+                } else {
+                    clearInterval(inter);
+                }
+            }
+
+        } else {
+            shaketimer = 0;
+        }
     });
 
 </script>
