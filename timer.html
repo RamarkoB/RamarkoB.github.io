@@ -13,6 +13,10 @@
             </div>
         </div>
     </body>
+
+    <btn id="request" class="btn btn-outline-dark">
+        Enable Permissions
+    </btn>
 </html>
 
 <script>
@@ -31,6 +35,27 @@
         document.getElementById("min").innerHTML = String(minutes);
         document.getElementById("sec").innerHTML = String(seconds);
     }
+
+    function permission () {
+        if ( typeof( DeviceMotionEvent ) !== "undefined" && typeof( DeviceMotionEvent.requestPermission ) === "function" ) {
+            // (optional) Do something before API request prompt.
+            DeviceMotionEvent.requestPermission()
+                .then( response => {
+                // (optional) Do something after API prompt dismissed.
+                if ( response == "granted" ) {
+                    window.addEventListener( "devicemotion", (e) => {
+                        // do something for 'e' here.
+                    })
+                }
+            })
+                .catch( console.error )
+        } else {
+            alert( "DeviceMotionEvent is not defined" );
+        }
+    }
+
+    const btn = document.getElementById( "request" );
+    btn.addEventListener( "click", permission );
 
     window.addEventListener("devicemotion", (event) => {
         const inter = setInterval(timeUpdate, "1000");
