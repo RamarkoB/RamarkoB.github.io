@@ -259,7 +259,7 @@ section > h1, section > div > div > h1 {
 }
 
 @media (prefers-color-scheme: dark) {
-  footer div.text-muted, footer i {
+  footer div.text-muted, footer i, .text-black-50 {
     color: white!important;
   }
 }
