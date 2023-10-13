@@ -11,7 +11,7 @@
     <meta name="twitter:title" content="Portfolio - Ramarko Bhattacharya">
     <meta name="twitter:image" content="assets/img/Logo.png">
     <link rel="icon" type="image/png" sizes="720x720" href="assets/img/Logo.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Jost.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="assets/css/display.css">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div><!-- Start: Navbar Right Links -->
-    <nav class="navbar navbar-light navbar-expand-md text-uppercase py-3" style="border-bottom: 3px solid var(--bs-body-color) ;">
+    <nav class="navbar navbar-expand-md text-uppercase py-3 navbar-light" style="border-bottom: 3px solid var(--bs-body-color) ;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="home"><span id="nav-name" class="fw-bold, text-uppercase, blackout" style="font-weight: bold;letter-spacing: 10px;"><span style="letter-spacing: 0;padding: 10px;"><span style="text-decoration: line-through;">R</span></span>amarko</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
@@ -70,17 +70,53 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3" style="margin-top: 24px;padding-right: 10px;padding-left: 10px;">
             <div class="col">
-                <!-- Start: AutoChair -->
-                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/decorum.png">
+                <!-- Start: Stick S'talk -->
+                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/stick.jpg">
                     <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
-                        <h4 class="card-title" style="margin-bottom: 0;">Decorum</h4>
-                        <p>A more advanced version of "AutoChair," Decorum was a chairing and moderating tool deployed at the Model United Nation of the University of Chicago, the third biggest Model Conference in the United States. I personally designed and programmed the entire application myself using React.&nbsp;&nbsp;</p>
+                        <h4 class="card-title" style="margin-bottom: 0;">Stick S'talk</h4>
+                        <p>Inspired by the talking stick, Stick S'talk was a project to create a tangible talking stick. With an embedded IMU, vibration motor, and two sets of NeoPixel LED arrays, Stick S'talk was a prototype Tangible User interface that could act a silent moderator.&nbsp;</p>
+                    </div>
+                </div><!-- End: Stick S'talk -->
+                <!-- Start: Pedestal -->
+                <div class="card border-dark border rounded border-2 card-design" style="margin-bottom: 12px;"><img class="card-img-top w-100 d-block" src="assets/img/Pedestal.png">
+                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
+                        <h4 class="card-title" style="margin-bottom: 0;">Pedestal</h4>
+                        <p>Inspired by my experience at Ars Electronica 2023, <em>Pedestal </em>focuses on the paradox of art analysis. Oftentimes, people will find incredibly profound meaning in an artwork while others will only make asinine comments. <em>Pedestal</em>&nbsp;attempts to mimic this with a virtual experience.</p>
                         <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/decorum">Github</a></li>
-                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="decorum">Try it out!</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="pedestal">Try it out!</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a class="link-dark" href="https://github.com/RamarkoB/pedestal">Github</a></li>
                         </ul>
                     </div>
-                </div><!-- End: AutoChair -->
+                </div><!-- End: Pedestal -->
+            </div>
+            <div class="col">
+                <!-- Start: JARME -->
+                <div class="card border-dark border rounded border-2 card-portfolio card" style="margin-bottom: 12px;"><svg style="width: 90%;margin: 10px auto;" viewBox="0 0 859 379" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+         path {
+             fill: black;
+         }
+
+         @media (prefers-color-scheme: dark) {
+             path { fill: white; }
+         }
+
+     </style>
+ <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7757 22C29.6105 16.2778 32.7886 11.1547 36.94 7H15H0V22V364V379H15H844H859V364V22V7H844H90.06C94.2114 11.1547 97.3895 16.2778 99.2243 22H844V364H15V22H27.7757Z" fill="black"/>
+ <path d="M168.214 127.25L195.514 50H209.764L168.514 160.25L137.014 78.65L105.514 160.25L64.2638 50H78.5138L106.414 127.25L137.014 44.75L168.214 127.25ZM245.852 102.5C245.852 110.4 247.552 117.45 250.952 123.65C254.452 129.85 259.202 134.75 265.202 138.35C271.202 141.95 278.002 143.75 285.602 143.75C293.302 143.75 300.102 141.95 306.002 138.35C312.002 134.75 316.702 129.85 320.102 123.65C323.602 117.45 325.352 110.4 325.352 102.5C325.352 94.6 323.602 87.55 320.102 81.35C316.702 75.15 312.002 70.25 306.002 66.65C300.102 63.05 293.302 61.25 285.602 61.25C278.002 61.25 271.202 63.05 265.202 66.65C259.202 70.25 254.452 75.15 250.952 81.35C247.552 87.55 245.852 94.6 245.852 102.5ZM232.352 102.5C232.352 94.8 233.652 87.7 236.252 81.2C238.952 74.6 242.702 68.9 247.502 64.1C252.302 59.2 257.952 55.4 264.452 52.7C270.952 49.9 278.002 48.5 285.602 48.5C293.302 48.5 300.352 49.9 306.752 52.7C313.252 55.4 318.902 59.2 323.702 64.1C328.502 68.9 332.202 74.6 334.802 81.2C337.502 87.7 338.852 94.8 338.852 102.5C338.852 110.1 337.502 117.2 334.802 123.8C332.202 130.4 328.502 136.15 323.702 141.05C318.902 145.85 313.252 149.65 306.752 152.45C300.352 155.15 293.302 156.5 285.602 156.5C278.002 156.5 270.952 155.15 264.452 152.45C257.952 149.65 252.302 145.85 247.502 141.05C242.702 136.15 238.952 130.4 236.252 123.8C233.652 117.2 232.352 110.1 232.352 102.5ZM392.858 103.25H407.108L444.608 155H428.858L392.858 103.25ZM374.108 50H386.858V155H374.108V50ZM381.158 61.25V50H402.608C409.408 50 415.458 51.3 420.758 53.9C426.158 56.4 430.408 60 433.508 64.7C436.708 69.4 438.308 75 438.308 81.5C438.308 87.9 436.708 93.5 433.508 98.3C430.408 103 426.158 106.65 420.758 109.25C415.458 111.75 409.408 113 402.608 113H381.158V101.75H402.608C407.108 101.75 411.058 100.95 414.458 99.35C417.958 97.75 420.658 95.45 422.558 92.45C424.558 89.45 425.558 85.8 425.558 81.5C425.558 77.2 424.558 73.55 422.558 70.55C420.658 67.55 417.958 65.25 414.458 63.65C411.058 62.05 407.108 61.25 402.608 61.25H381.158ZM475.293 50H488.043V155H475.293V50ZM529.293 50H545.043L499.593 99.2L547.293 155H531.543L484.143 99.5L529.293 50ZM639.578 50H652.328V155H639.578V50ZM773.096 50H785.846V160.25L706.346 76.85V155H693.596V44.75L773.096 128.15V50ZM47.6144 230H60.3644V335H47.6144V230ZM54.6643 242V230H76.1144C82.9144 230 88.9644 231.3 94.2644 233.9C99.6644 236.4 103.914 240 107.014 244.7C110.214 249.4 111.814 255 111.814 261.5C111.814 267.9 110.214 273.5 107.014 278.3C103.914 283 99.6644 286.65 94.2644 289.25C88.9644 291.75 82.9144 293 76.1144 293H54.6643V281H76.1144C82.9144 281 88.4144 279.35 92.6144 276.05C96.9144 272.75 99.0644 267.9 99.0644 261.5C99.0644 255 96.9144 250.15 92.6144 246.95C88.4144 243.65 82.9144 242 76.1144 242H54.6643ZM156.792 283.25H171.042L208.542 335H192.792L156.792 283.25ZM138.042 230H150.792V335H138.042V230ZM145.092 241.25V230H166.542C173.342 230 179.392 231.3 184.692 233.9C190.092 236.4 194.342 240 197.442 244.7C200.642 249.4 202.242 255 202.242 261.5C202.242 267.9 200.642 273.5 197.442 278.3C194.342 283 190.092 286.65 184.692 289.25C179.392 291.75 173.342 293 166.542 293H145.092V281.75H166.542C171.042 281.75 174.992 280.95 178.392 279.35C181.892 277.75 184.592 275.45 186.492 272.45C188.492 269.45 189.492 265.8 189.492 261.5C189.492 257.2 188.492 253.55 186.492 250.55C184.592 247.55 181.892 245.25 178.392 243.65C174.992 242.05 171.042 241.25 166.542 241.25H145.092ZM237.728 282.5C237.728 290.4 239.428 297.45 242.828 303.65C246.328 309.85 251.078 314.75 257.078 318.35C263.078 321.95 269.878 323.75 277.478 323.75C285.178 323.75 291.978 321.95 297.878 318.35C303.878 314.75 308.578 309.85 311.978 303.65C315.478 297.45 317.228 290.4 317.228 282.5C317.228 274.6 315.478 267.55 311.978 261.35C308.578 255.15 303.878 250.25 297.878 246.65C291.978 243.05 285.178 241.25 277.478 241.25C269.878 241.25 263.078 243.05 257.078 246.65C251.078 250.25 246.328 255.15 242.828 261.35C239.428 267.55 237.728 274.6 237.728 282.5ZM224.228 282.5C224.228 274.8 225.528 267.7 228.128 261.2C230.828 254.6 234.578 248.9 239.378 244.1C244.178 239.2 249.828 235.4 256.328 232.7C262.828 229.9 269.878 228.5 277.478 228.5C285.178 228.5 292.228 229.9 298.628 232.7C305.128 235.4 310.778 239.2 315.578 244.1C320.378 248.9 324.078 254.6 326.678 261.2C329.378 267.7 330.728 274.8 330.728 282.5C330.728 290.1 329.378 297.2 326.678 303.8C324.078 310.4 320.378 316.15 315.578 321.05C310.778 325.85 305.128 329.65 298.628 332.45C292.228 335.15 285.178 336.5 277.478 336.5C269.878 336.5 262.828 335.15 256.328 332.45C249.828 329.65 244.178 325.85 239.378 321.05C234.578 316.15 230.828 310.4 228.128 303.8C225.528 297.2 224.228 290.1 224.228 282.5ZM405.733 293.75V281.75H454.483C454.483 289.05 453.383 296 451.183 302.6C448.983 309.1 445.733 314.9 441.433 320C437.133 325.1 431.833 329.15 425.533 332.15C419.333 335.05 412.233 336.5 404.233 336.5C396.633 336.5 389.583 335.2 383.083 332.6C376.583 329.9 370.933 326.15 366.133 321.35C361.333 316.45 357.583 310.7 354.883 304.1C352.283 297.5 350.983 290.3 350.983 282.5C350.983 274.7 352.283 267.5 354.883 260.9C357.583 254.3 361.333 248.6 366.133 243.8C370.933 238.9 376.583 235.15 383.083 232.55C389.583 229.85 396.633 228.5 404.233 228.5C410.733 228.5 416.683 229.35 422.083 231.05C427.583 232.75 432.483 235.25 436.783 238.55C441.183 241.85 444.883 245.95 447.883 250.85L438.883 259.1C435.583 253.5 430.983 249.15 425.083 246.05C419.183 242.85 412.233 241.25 404.233 241.25C396.833 241.25 390.133 243 384.133 246.5C378.133 250 373.333 254.85 369.733 261.05C366.233 267.15 364.483 274.3 364.483 282.5C364.483 290.6 366.233 297.75 369.733 303.95C373.333 310.15 378.133 315 384.133 318.5C390.133 322 396.833 323.75 404.233 323.75C409.433 323.75 414.083 323 418.183 321.5C422.383 319.9 425.983 317.7 428.983 314.9C431.983 312.1 434.433 308.9 436.333 305.3C438.333 301.7 439.783 297.85 440.683 293.75H405.733ZM500.292 283.25H514.542L552.042 335H536.292L500.292 283.25ZM481.542 230H494.292V335H481.542V230ZM488.592 241.25V230H510.042C516.842 230 522.892 231.3 528.192 233.9C533.592 236.4 537.842 240 540.942 244.7C544.142 249.4 545.742 255 545.742 261.5C545.742 267.9 544.142 273.5 540.942 278.3C537.842 283 533.592 286.65 528.192 289.25C522.892 291.75 516.842 293 510.042 293H488.592V281.75H510.042C514.542 281.75 518.492 280.95 521.892 279.35C525.392 277.75 528.092 275.45 529.992 272.45C531.992 269.45 532.992 265.8 532.992 261.5C532.992 257.2 531.992 253.55 529.992 250.55C528.092 247.55 525.392 245.25 521.892 243.65C518.492 242.05 514.542 241.25 510.042 241.25H488.592ZM580.778 335V323H633.728V335H580.778ZM580.778 242V230H633.728V242H580.778ZM580.778 284V272H630.728V284H580.778ZM573.728 230H586.478V335H573.728V230ZM668.348 303.2C670.748 307.4 673.248 311.1 675.848 314.3C678.548 317.5 681.548 320 684.848 321.8C688.148 323.6 691.898 324.5 696.098 324.5C701.698 324.5 706.198 322.95 709.598 319.85C712.998 316.75 714.698 312.8 714.698 308C714.698 303.3 713.598 299.55 711.398 296.75C709.198 293.95 706.298 291.7 702.698 290C699.198 288.2 695.448 286.6 691.448 285.2C688.848 284.3 685.948 283.15 682.748 281.75C679.548 280.25 676.498 278.4 673.598 276.2C670.698 273.9 668.298 271.1 666.398 267.8C664.598 264.5 663.698 260.45 663.698 255.65C663.698 250.45 664.998 245.8 667.598 241.7C670.198 237.6 673.798 234.4 678.398 232.1C682.998 229.7 688.248 228.5 694.148 228.5C699.848 228.5 704.798 229.6 708.998 231.8C713.298 233.9 716.948 236.65 719.948 240.05C722.948 243.35 725.298 246.85 726.998 250.55L716.048 256.85C714.748 254.25 713.098 251.7 711.098 249.2C709.098 246.7 706.648 244.65 703.748 243.05C700.948 241.45 697.498 240.65 693.398 240.65C687.698 240.65 683.548 242.05 680.948 244.85C678.348 247.55 677.048 250.6 677.048 254C677.048 256.9 677.798 259.6 679.298 262.1C680.798 264.5 683.298 266.8 686.798 269C690.398 271.1 695.248 273.2 701.348 275.3C704.148 276.3 707.098 277.6 710.198 279.2C713.298 280.8 716.148 282.85 718.748 285.35C721.448 287.75 723.648 290.7 725.348 294.2C727.048 297.6 727.898 301.7 727.898 306.5C727.898 311.1 726.998 315.25 725.198 318.95C723.498 322.65 721.098 325.8 717.998 328.4C714.998 331 711.548 333 707.648 334.4C703.848 335.8 699.848 336.5 695.648 336.5C689.948 336.5 684.648 335.3 679.748 332.9C674.948 330.4 670.698 327.15 666.998 323.15C663.398 319.05 660.448 314.7 658.148 310.1L668.348 303.2ZM758.776 303.2C761.176 307.4 763.676 311.1 766.276 314.3C768.976 317.5 771.976 320 775.276 321.8C778.576 323.6 782.326 324.5 786.526 324.5C792.126 324.5 796.626 322.95 800.026 319.85C803.426 316.75 805.126 312.8 805.126 308C805.126 303.3 804.026 299.55 801.826 296.75C799.626 293.95 796.726 291.7 793.126 290C789.626 288.2 785.876 286.6 781.876 285.2C779.276 284.3 776.376 283.15 773.176 281.75C769.976 280.25 766.926 278.4 764.026 276.2C761.126 273.9 758.726 271.1 756.826 267.8C755.026 264.5 754.126 260.45 754.126 255.65C754.126 250.45 755.426 245.8 758.026 241.7C760.626 237.6 764.226 234.4 768.826 232.1C773.426 229.7 778.676 228.5 784.576 228.5C790.276 228.5 795.226 229.6 799.426 231.8C803.726 233.9 807.376 236.65 810.376 240.05C813.376 243.35 815.726 246.85 817.426 250.55L806.476 256.85C805.176 254.25 803.526 251.7 801.526 249.2C799.526 246.7 797.076 244.65 794.176 243.05C791.376 241.45 787.926 240.65 783.826 240.65C778.126 240.65 773.976 242.05 771.376 244.85C768.776 247.55 767.476 250.6 767.476 254C767.476 256.9 768.226 259.6 769.726 262.1C771.226 264.5 773.726 266.8 777.226 269C780.826 271.1 785.676 273.2 791.776 275.3C794.576 276.3 797.526 277.6 800.626 279.2C803.726 280.8 806.576 282.85 809.176 285.35C811.876 287.75 814.076 290.7 815.776 294.2C817.476 297.6 818.326 301.7 818.326 306.5C818.326 311.1 817.426 315.25 815.626 318.95C813.926 322.65 811.526 325.8 808.426 328.4C805.426 331 801.976 333 798.076 334.4C794.276 335.8 790.276 336.5 786.076 336.5C780.376 336.5 775.076 335.3 770.176 332.9C765.376 330.4 761.126 327.15 757.426 323.15C753.826 319.05 750.876 314.7 748.576 310.1L758.776 303.2Z" fill="black"/>
+ <path fill-rule="evenodd" clip-rule="evenodd" d="M43.9435 15.8145C41.8541 18.2617 40.1924 21.1448 39.114 24.386C34.6328 37.854 41.918 52.4048 55.386 56.886C68.854 61.3672 83.4048 54.082 87.886 40.614C92.3672 27.146 85.082 12.5952 71.614 8.11398C69.7575 7.49627 67.8804 7.10213 66.012 6.91695L74.6415 25.3422C75.5785 27.3428 74.7162 29.7242 72.7157 30.6611L58.4443 37.3451C56.4437 38.2821 54.0624 37.4199 53.1254 35.4193L43.9435 15.8145Z" fill="black"/>
+ </svg>
+ 
+ 
+                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
+                        <h4 class="card-title" style="margin-bottom: 0;">JARME</h4>
+                        <p>The JavaScript ARM Emulator (JARME) project was a way to visualize and demonstrate how arm commands are executed. JARME is still in progress, but can currently execute 8 basic commands.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a class="link-dark" href="jarme">Try it Out!</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a class="link-dark" href="https://github.com/RamarkoB/jarme">Github</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End: JARME -->
                 <!-- Start: Chiventure -->
                 <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/chiventure.jpeg">
                     <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
@@ -91,16 +127,37 @@
                         </ul>
                     </div>
                 </div><!-- End: Chiventure -->
+                <!-- Start: AutoChair -->
+                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/autochair.png">
+                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
+                        <h4 class="card-title" style="margin-bottom: 0;">AutoChair</h4>
+                        <p>UChicago hosts the prestigious collegiate Model United Nations conference, ChoMUN, annually. Most chairs use a combination of spreadsheets and a timer to keep track of their committee. When I chaired My own committee, I decided to take a more advanced approach and develop an open-source platform that would allow people to more easily chair a committee.&nbsp;</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/AutoChair">Github</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End: AutoChair -->
             </div>
             <div class="col">
+                <!-- Start: Decorum -->
+                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/decorum.png">
+                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
+                        <h4 class="card-title" style="margin-bottom: 0;">Decorum</h4>
+                        <p>A more advanced version of "AutoChair," Decorum was a chairing and moderating tool deployed at the Model United Nation of the University of Chicago, the third biggest Model Conference in the United States. I personally designed and programmed the entire application myself using React.&nbsp;&nbsp;</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="decorum">Try it out!</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/decorum">Github</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End: Decorum -->
                 <!-- Start: Alienation -->
                 <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/alienation.png">
                     <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
                         <h4 class="card-title" style="margin-bottom: 0;">Alienation</h4>
                         <p>A art project originally designed to create a sense of isolation from traditional web design, Alienation randomly generates elements using d3 to display to create a random screen experience.</p>
                         <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/bangla-project">Github</a></li>
                             <li class="list-inline-item" style="text-decoration:  underline;"><a href="alienation">Try it out!</a></li>
+                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/alienation">Github</a></li>
                         </ul>
                     </div>
                 </div><!-- End: Alienation -->
@@ -114,18 +171,6 @@
                         </ul>
                     </div>
                 </div><!-- End: Bangla Tester -->
-            </div>
-            <div class="col">
-                <!-- Start: AutoChair -->
-                <div class="card border-dark border rounded border-2 card-portfolio card"><img class="card-img-top w-100 d-block" src="assets/img/autochair.png">
-                    <div class="card-body" style="border-top-width: 2px;border-top-style: solid;padding-bottom: 0px;">
-                        <h4 class="card-title" style="margin-bottom: 0;">AutoChair</h4>
-                        <p>UChicago hosts the prestigious collegiate Model United Nations conference, ChoMUN, annually. Most chairs use a combination of spreadsheets and a timer to keep track of their committee. When I chaired My own committee, I decided to take a more advanced approach and develop an open-source platform that would allow people to more easily chair a committee.&nbsp;</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item" style="text-decoration:  underline;"><a href="https://github.com/RamarkoB/AutoChair">Github</a></li>
-                        </ul>
-                    </div>
-                </div><!-- End: AutoChair -->
             </div>
         </div>
     </section><!-- End: Projects -->
@@ -205,7 +250,7 @@
             <p class="mb-0">Ramarko Bhattacharya</p>
         </div>
     </footer><!-- End: Footer Basic -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/cardvisibility.js"></script>
     <script src="assets/js/modal.js"></script>
