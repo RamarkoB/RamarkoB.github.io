@@ -166,6 +166,11 @@ section > h1, section > div > div > h1 {
 
 /* Cards */
 
+.img-svg {
+  margin: 2%!important;
+  width: auto!important;
+}
+
 .card {
   margin-bottom: 12px;
 }
