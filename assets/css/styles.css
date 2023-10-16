@@ -18,7 +18,7 @@ body {
 
 .card-text {
   text-decoration: none;
-  color: var(--bs-black);
+  color: white;
 }
 
 #excuses, .img-change {
