@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/display.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 <link rel=”apple-touch-icon” type="image/png" href="assets/img/Logo.png">
-    <link rel="shortcut icon" type="image/png" href="assets/img/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/Logo.png"><script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
 </head>
 
 <body>
@@ -34,8 +34,9 @@
         </div>
     </nav><!-- End: Navbar Right Links -->
     <!-- Start: Parallax Background -->
-    <div data-bss-parallax-bg="true" class="hover-card" style="height: 600px;border-bottom-width: 3px;border-bottom-style: solid;">
-        <div class="container h-100">
+    <div class="hover-card" style="height: 600px;border-bottom-width: 3px;border-bottom-style: solid;">
+        <div id="splinebox" class="load-first"><spline-viewer url="https://prod.spline.design/V96GiNrAWKQjibMn/scene.splinecode"></spline-viewer></div>
+        <div class="container h-100 load-first">
             <div class="row h-100">
                 <div class="col-12 col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center load-first">
                     <div style="max-width: 350px;">
@@ -94,7 +95,6 @@
         </div>
     </footer><!-- End: Footer Basic -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/cardvisibility.js"></script>
 </body>
 

@@ -54,6 +54,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  #splinebox {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   #profile-firstname {
     margin-top: 5%;
   }
@@ -165,6 +171,15 @@ section > h1, section > div > div > h1 {
 }
 
 /* Cards */
+
+#splinebox {
+  position: absolute;
+  width: 60%;
+  right: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+}
 
 .img-svg {
   margin: 2%!important;
