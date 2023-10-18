@@ -175,7 +175,7 @@ section > h1, section > div > div > h1 {
 #splinebox {
   position: absolute;
   width: 60%;
-  right: -20%;
+  right: 0;
   top: 300px;
   transform: translateY(-35%);
   z-index: 200;
