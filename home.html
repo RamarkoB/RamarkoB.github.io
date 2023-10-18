@@ -35,7 +35,15 @@
     </nav><!-- End: Navbar Right Links -->
     <!-- Start: Parallax Background -->
     <div class="hover-card" style="height: 600px;border-bottom-width: 3px;border-bottom-style: solid;">
-        <div id="splinebox" class="load-second"><spline-viewer url="https://prod.spline.design/V96GiNrAWKQjibMn/scene.splinecode"></spline-viewer></div>
+        <div id="splinebox" class="load-second"><canvas id="canvas3d"></canvas>
+
+<script type="module">
+    import { Application } from "https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.9.485/build/runtime.min.js";
+
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/V96GiNrAWKQjibMn/scene.splinecode');
+</script></div>
         <div class="container h-100 load-first">
             <div class="row h-100">
                 <div class="col-12 col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center load-first">
