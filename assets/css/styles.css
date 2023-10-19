@@ -231,7 +231,7 @@ section > h1, section > div > div > h1 {
   display: inline;
   padding-left: .25em;
   box-shadow: inset 0em 0 black;
-  transition: all 1s;
+  transition: box-shadow 1s, color 1s;
 }
 
 .card-hover:hover h1 {
