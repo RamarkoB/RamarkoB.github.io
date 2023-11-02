@@ -1,4 +1,4 @@
-body, html {
+html, body {
   background-color: var(--bs-light);
   overflow-x: hidden;
   font-family: Jost;
@@ -257,7 +257,7 @@ section > h1, section > div > div > h1 {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  :root {
     --bs-light: #111;
     --bs-white: #111;
     --bs-black: #fff;
