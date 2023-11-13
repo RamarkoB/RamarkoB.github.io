@@ -53,6 +53,12 @@ html, body {
   }
 }
 
+@media (max-width: 992px) {
+  #splinebox {
+    transform: translate(10%,-50%)!important;
+  }
+}
+
 @media (max-width: 767px) {
   #splinebox {
     display: none;
@@ -174,11 +180,11 @@ section > h1, section > div > div > h1 {
 
 #splinebox {
   position: absolute;
-  width: 60%;
   right: 0;
-  top: 300px;
-  transform: translateY(-35%);
+  top: 50%;
+  transform: translate(-5%,-50%);
   z-index: 200;
+  height: 80%;
 }
 
 .img-svg {
