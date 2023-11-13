@@ -185,6 +185,7 @@ section > h1, section > div > div > h1 {
   transform: translate(-5%,-50%);
   z-index: 200;
   height: 80%;
+  aspect-ratio: 1;
 }
 
 .img-svg {
