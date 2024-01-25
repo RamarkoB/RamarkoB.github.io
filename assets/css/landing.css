@@ -80,6 +80,16 @@
   color: white;
 }
 
+@media (max-width: 767px) {
+  #mainBody {
+    height: 50vh;
+  }
+  
+  #mainNav, #mainCards {
+    height: fit-content;
+  }
+}
+
 @media (min-width: 1081px) {
   #mainBody {
     height: calc(90vh - 140px);
