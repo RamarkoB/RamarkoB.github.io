@@ -68,16 +68,26 @@
 }
 
 #mainBody {
-  height: 70vh;
+  height: calc(90vh - 170px);
   border-bottom-width: 3px;
   border-bottom-style: solid; 
   position: relative;
 }
 
 #mainCards {
-  height: 20vh;
+  height: 170px;
   padding: 24px 10px; 
   color: white;
+}
+
+@media (min-width: 1081px) {
+  #mainBody {
+    height: calc(90vh - 140px);
+  }
+
+  #mainCards {
+    height: 140px;
+  }
 }
 
 footer {

@@ -1,3 +1,90 @@
+.skills {
+  display: flex;
+  padding-top: 5px;
+  flex-direction: row;
+  height: fit-content;
+  width: 100vw;
+}
+
+.skills:hover .skillbox {
+  animation-play-state: paused;
+}
+
+.skills-left .skillbox {
+  animation: scroll-left 15s linear infinite;
+}
+
+.skills-right .skillbox {
+  animation: scroll-right 15s linear infinite;
+}
+
+.skillbox {
+  padding-left: 15px;
+  height: 100px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  animation-delay: 0;
+  animation-play-state: running;
+}
+
+.skill {
+  width: 33vw;
+  margin-top: 5px;
+  height: 90px;
+  outline: var(--bs-black) solid 3px;
+  opacity: 50%;
+  transition: opacity .4s;
+}
+
+.skill:hover {
+  opacity: 100%;
+}
+
+.skill h4 {
+  width: fit-content!important;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone!important;
+  white-space: pre-line;
+  margin-left: -.25em;
+  padding-left: .25em;
+  padding-right: .25em;
+  color: white!important;
+  box-shadow: inset 0em 0 black;
+  display: inline;
+  transition: box-shadow 0.5s, color 0.5s;
+}
+
+.skill:hover h4 {
+  box-shadow: inset 10em 0 0 0.1px black;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(-200%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translate(-200%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .skill {
+    width: 66vw;
+  }
+}
+
 .skill-html {
   background: linear-gradient(45deg, #ef652a, #e90b63);
 }
@@ -57,91 +144,3 @@
 .skill-microsoft {
   background: linear-gradient(45deg, #7CBB00, #FFBB00);
 }
-
-.skills {
-  display: flex;
-  padding-top: 5px;
-  flex-direction: row;
-  height: fit-content;
-  width: 100vw;
-}
-
-.skills:hover .skillbox {
-  animation-play-state: paused;
-}
-
-.skills-left .skillbox {
-  animation: scroll-left 15s linear infinite;
-}
-
-.skills-right .skillbox {
-  animation: scroll-right 15s linear infinite;
-}
-
-.skillbox {
-  padding-left: 15px;
-  height: 100px;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  animation-delay: 0;
-  animation-play-state: running;
-}
-
-.skill {
-  width: 33vw;
-  margin-top: 5px;
-  height: 90px;
-  outline: var(--bs-black) solid 3px;
-  opacity: 50%;
-  transition: opacity .4s;
-}
-
-@media (max-width: 767px) {
-  .skill {
-    width: 66vw;
-  }
-}
-
-.skill:hover {
-  opacity: 100%;
-}
-
-.skill h4 {
-  width: fit-content!important;
-  -webkit-box-decoration-break: clone;
-  -o-box-decoration-break: clone;
-  box-decoration-break: clone!important;
-  white-space: pre-line;
-  margin-left: -.25em;
-  padding-left: .25em;
-  padding-right: .25em;
-  color: white!important;
-  box-shadow: inset 0em 0 black;
-  display: inline;
-  transition: box-shadow 0.5s, color 0.5s;
-}
-
-.skill:hover h4 {
-  box-shadow: inset 10em 0 0 0.1px black;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translate(-100%);
-  }
-  100% {
-    transform: translate(-200%);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    transform: translate(-200%);
-  }
-  100% {
-    transform: translate(-100%);
-  }
-}
-

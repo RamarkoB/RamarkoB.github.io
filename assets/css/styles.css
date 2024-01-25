@@ -29,125 +29,6 @@ body {
   display: none;
 }
 
-@media (min-width: 768px) {
-  #profile-card {
-    margin-top: 10%;
-    font-size: 5vw;
-  }
-}
-
-@media (min-width: 768px) {
-  #modal.show {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 1;
-  }
-}
-
-@media (max-width: 767px) {
-  #profile-card {
-    margin-top: 40%;
-    font-size: 10vw;
-  }
-}
-
-@media (max-width: 992px) {
-  #splinebox {
-    transform: translate(10%,-50%)!important;
-  }
-}
-
-@media (max-width: 767px) {
-  #splinebox {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  #profile-firstname {
-    margin-top: 5%;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn-group {
-    margin: -3px 0px 7px;
-  }
-}
-
-@media (min-width: 768px) {
-  .card-design {
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 768px) {
-  .card-design h4 {
-    -webkit-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone!important;
-    white-space: pre-line;
-    margin-left: -.25em;
-    padding-left: .25em;
-    padding-right: .25em;
-    box-shadow: inset 0em 0 var(--bs-black);
-    display: inline;
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
-@media (min-width: 768px) {
-  .card-design:hover h4 {
-    box-decoration-break: clone;
-    box-shadow: inset 25em 0em 0 .1px var(--bs-black);
-    color: var(--bs-white)!important;
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
-@media (hover: hover) {
-  .card-home h4 {
-    -webkit-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone!important;
-    white-space: pre-line;
-    margin-left: -.25em;
-    padding-left: .25em;
-    padding-right: .25em;
-    box-shadow: inset 0em 0 black;
-    display: inline;
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
-@media (hover: hover) {
-  .card-home:hover h4 {
-    box-decoration-break: clone;
-    box-shadow: inset 25em 0em 0 .1px black;
-    color: white!important;
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
-@media (min-width: 768px) {
-  .blackout:hover, .blackout.active {
-    color: var(--bs-white)!important;
-    box-shadow: inset 10em 0 0 0.1px var(--bs-black);
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
-@media (max-width: 767px) {
-  .blackout.active {
-    padding: 8px 10px;
-    color: var(--bs-white)!important;
-    box-shadow: inset 8em 0 0 0 var(--bs-black);
-    transition: box-shadow 0.5s, color 0.5s;
-  }
-}
-
 #modal-title, #modal-footer {
   padding: 10px 0;
 }
@@ -263,6 +144,109 @@ section > h1, section > div > div > h1 {
   color: var(--bs-body-color);
 }
 
+.card i {
+  color: var(--bs-body-color)!important;
+}
+
+@media (max-width: 767px) {
+  #profile-card {
+    margin-top: 40%;
+    font-size: 10vw;
+  }
+  
+  #splinebox {
+    display: none;
+  }
+  
+  #profile-firstname {
+    margin-top: 5%;
+  }
+  
+  .btn-group {
+    margin: -3px 0px 7px;
+  }
+  
+  .blackout.active {
+    padding: 8px 10px;
+    color: var(--bs-white)!important;
+    box-shadow: inset 8em 0 0 0 var(--bs-black);
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-card {
+    margin-top: 10%;
+    font-size: 5vw;
+  }
+  
+  #modal.show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+  }
+  
+  .card-design {
+    cursor: pointer;
+  }
+  
+  .card-design h4 {
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone!important;
+    white-space: pre-line;
+    margin-left: -.25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    box-shadow: inset 0em 0 var(--bs-black);
+    display: inline;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .card-design:hover h4 {
+    box-decoration-break: clone;
+    box-shadow: inset 25em 0em 0 .1px var(--bs-black);
+    color: var(--bs-white)!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .blackout:hover, .blackout.active {
+    color: var(--bs-white)!important;
+    box-shadow: inset 10em 0 0 0.1px var(--bs-black);
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (max-width: 992px) {
+  #splinebox {
+    transform: translate(10%,-50%)!important;
+  }
+}
+
+@media (hover: hover) {
+  .card-home h4 {
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone!important;
+    white-space: pre-line;
+    margin-left: -.25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    box-shadow: inset 0em 0 black;
+    display: inline;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .card-home:hover h4 {
+    box-decoration-break: clone;
+    box-shadow: inset 25em 0em 0 .1px black;
+    color: white!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bs-light: #111;
@@ -273,19 +257,11 @@ section > h1, section > div > div > h1 {
     --bs-card-color: #fff;
     --bs-secondary-color: #bcbcbc;
   }
-}
-
-.card i {
-  color: var(--bs-body-color)!important;
-}
-
-@media (prefers-color-scheme: dark) {
+  
   h1, #excuses, .card-title, a {
     color: white;
   }
-}
-
-@media (prefers-color-scheme: dark) {
+  
   footer div.text-muted, footer i, .text-black-50 {
     color: white!important;
   }
