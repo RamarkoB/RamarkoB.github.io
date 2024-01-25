@@ -4,7 +4,7 @@
 }
 
 .grainy-gradient-intro:before, .grainy-gradient-intro:after {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: -1;
   --size: 55%;
@@ -38,5 +38,32 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+#main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+#landing {
+  position: relative;
+}
+
+#explore {
+  margin: 0 25%;
+  letter-spacing: 7px;
+  font-size: 2vh;
+}
+
+#main > div {
+  margin-bottom: 10vh;
+  scroll-snap-align: start none;
+}
+
+footer {
+  scroll-snap-align: end none;
 }
 
