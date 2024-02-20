@@ -1,0 +1,273 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bs-light);
+  overflow-x: hidden;
+  font-family: Jost;
+}
+
+/* Nav Bar Menu */
+
+.blackout {
+  color: var(--bs-black);
+  box-shadow: inset 0em 0 (--bs-black);
+  transition: box-shadow 0.5s, color 0.5s;
+}
+
+.card {
+  background-color: var(--bs-white);
+}
+
+.card-text {
+  text-decoration: none;
+  color: white;
+}
+
+#excuses, .img-change {
+  cursor: pointer;
+}
+
+#modal:not(.show) {
+  display: none;
+}
+
+#modal-title, #modal-footer {
+  padding: 10px 0;
+}
+
+/* Sections and Section Headers */
+
+section {
+  margin-top: 36px;
+}
+
+section > h1, section > div > div > h1 {
+  border-bottom: 3px solid;
+  width: fit-content;
+  display: flex;
+  margin: 12px;
+  padding: 0px 12px;
+}
+
+.btn-group i {
+  margin-right: 10px;
+  display: inline!important;
+}
+
+.btn {
+  box-shadow: none!important;
+  outline: none!important;
+}
+
+/* Cards */
+
+#splinebox {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-5%,-50%);
+  z-index: 200;
+  height: 80%;
+  aspect-ratio: 1;
+}
+
+.img-svg {
+  margin: 2%!important;
+  width: auto!important;
+}
+
+.card {
+  margin-bottom: 12px;
+}
+
+.card-hover {
+  background-size: 200% 100%!important;
+  background-position: left!important;
+  transition: background-position ease 2s!important;
+}
+
+.card-hover:hover, .card-hover:active {
+  background-position: right!important;
+}
+
+.card-blackout h4 {
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone!important;
+  white-space: pre-line;
+  margin-left: -.25em;
+  padding-left: .25em;
+  padding-right: .25em;
+  box-shadow: inset 0em 0 var(--bs-black);
+  display: inline;
+  transition: box-shadow 0.5s, color 0.5s;
+}
+
+.card-blackout:hover h4 {
+  box-shadow: inset 25em 0em 0 .1px var(--bs-black);
+  color: var(--bs-white)!important;
+}
+
+.card-blackout .row:first-of-type, .card-blackout.card-portfolio p {
+  padding-top: .5em;
+}
+
+.card-blackout .row:last-of-type, .card-blackout.card-portfolio p {
+  padding-bottom: .5em;
+}
+
+.card-hover h1 {
+  color: black;
+  display: inline;
+  padding-left: .25em;
+  box-shadow: inset 0em 0 black;
+  transition: box-shadow 1s, color 1s;
+}
+
+.card-hover:hover h1 {
+  color: white;
+  box-shadow: inset 10em 0 0 0.1px black;
+}
+
+.card-school {
+  margin: 0px 10px;
+  border-color: transparent;
+}
+
+.link-dark, .link-dark span {
+  color: var(--bs-black)!important;
+}
+
+.text-dark {
+  color: var(--bs-black)!important;
+}
+
+.btn-outline-dark {
+  color: var(--bs-body-color);
+}
+
+.card i {
+  color: var(--bs-body-color)!important;
+}
+
+@media (max-width: 767px) {
+  #profile-card {
+    margin-top: 40%;
+    font-size: 10vw;
+  }
+  
+  #splinebox {
+    display: none;
+  }
+  
+  #profile-firstname {
+    margin-top: 5%;
+  }
+  
+  .btn-group {
+    margin: -3px 0px 7px;
+  }
+  
+  .blackout.active {
+    padding: 8px 10px;
+    color: var(--bs-white)!important;
+    box-shadow: inset 8em 0 0 0 var(--bs-black);
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-card {
+    margin-top: 10%;
+    font-size: 5vw;
+  }
+  
+  #modal.show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+  }
+  
+  .card-design {
+    cursor: pointer;
+  }
+  
+  .card-design h4 {
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone!important;
+    white-space: pre-line;
+    margin-left: -.25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    box-shadow: inset 0em 0 var(--bs-black);
+    display: inline;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .card-design:hover h4 {
+    box-decoration-break: clone;
+    box-shadow: inset 25em 0em 0 .1px var(--bs-black);
+    color: var(--bs-white)!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .blackout:hover, .blackout.active {
+    color: var(--bs-white)!important;
+    box-shadow: inset 10em 0 0 0.1px var(--bs-black);
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (max-width: 992px) {
+  #splinebox {
+    transform: translate(10%,-50%)!important;
+  }
+}
+
+@media (hover: hover) {
+  .card-home h4 {
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone!important;
+    white-space: pre-line;
+    margin-left: -.25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    box-shadow: inset 0em 0 black;
+    display: inline;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+  
+  .card-home:hover h4 {
+    box-decoration-break: clone;
+    box-shadow: inset 25em 0em 0 .1px black;
+    color: white!important;
+    transition: box-shadow 0.5s, color 0.5s;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-light: #111;
+    --bs-white: #111;
+    --bs-black: #fff;
+    --bs-dark-rgb: #bcbcbc;
+    --bs-body-color: #bcbcbc;
+    --bs-card-color: #fff;
+    --bs-secondary-color: #bcbcbc;
+  }
+  
+  h1, #excuses, .card-title, a {
+    color: white;
+  }
+  
+  footer div.text-muted, footer i, .text-black-50 {
+    color: white!important;
+  }
+}
+
