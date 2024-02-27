@@ -53,11 +53,11 @@
   display: none;
 }
 
-.card-resume:focus ul, section.active ul {
+.card-resume:hover ul, section.active ul {
   display: block;
 }
 
-.card-resume:focus i, section.active i {
+.card-resume:hover i, section.active i {
   display: none;
 } 
 
